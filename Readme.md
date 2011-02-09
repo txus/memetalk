@@ -1,7 +1,7 @@
 #Memetalk
 
-A simple gem that combines the power of Dr Brain's [meme generator](http://github.com/drbrain/meme)
-and Talkerapp's power of communication.
+A simple gem that combines the power of [a fork](http://github.com/txus/memegenerator) of Dr Brain's [meme generator](http://github.com/drbrain/meme)
+and the power of communication of [Talkerapp](http://talkerapp.com).
 
 ##Install
 
@@ -26,11 +26,6 @@ to your fellow colleagues, do the following:
     memetalk Y_U_NO "TESTS" "WHY U NO GREEN"
 
 And look at your Talker room! 
-
-##Known caveats
-
-For now, Dr Brain's meme generator needs to accept a couple of pull requests
-before Memetalk works. Hopefully within the next hours!
 
 ##Contribute!
 
