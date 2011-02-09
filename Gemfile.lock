@@ -1,15 +1,8 @@
-GIT
-  remote: git://github.com/txus/meme
-  revision: 39d1931b6b210d96369efbfbc8bf3cc6d8d40f20
-  branch: develop
-  specs:
-    meme_generator (1.0)
-      nokogiri (~> 1.4)
-
 PATH
   remote: .
   specs:
     memetalk (0.0.1)
+      memegenerator
       talker
 
 GEM
@@ -17,6 +10,8 @@ GEM
   specs:
     diff-lcs (1.1.2)
     eventmachine (0.12.10)
+    memegenerator (1.1.0)
+      nokogiri (~> 1.4)
     nokogiri (1.4.4)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
@@ -35,7 +30,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  meme_generator!
+  memegenerator
   memetalk!
   rspec
   talker

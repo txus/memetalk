@@ -12,11 +12,10 @@ describe Memetalk do
   end
   describe '.run' do
     it 'delegates meme creation to Meme Generator and publishes it' do
-      Memetalk.list
-      link = double :link
+      link = 'http://google.com'
       Meme.should_receive(:run).with(['Y_U_NO', 'TEST', 'WHY U NO GREEN']).and_return link
-      Memetalk.should_receive(:publish).with link
-      Memetalk.run 'Y_U_NO', 'TEST', 'WHY U NO GREEN'
+      Memetalk.should_receive(:publish).with (link + '.jpg')
+      Memetalk.run(['Y_U_NO', 'TEST', 'WHY U NO GREEN'])
     end
   end
   describe '.publish' do

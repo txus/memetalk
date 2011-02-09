@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "memetalk"
 
   s.add_runtime_dependency 'talker'
-  # s.add_runtime_dependency 'meme_generator'
+  s.add_runtime_dependency 'memegenerator'
 
   s.add_development_dependency 'rspec'
 
