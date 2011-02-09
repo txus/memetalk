@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 $: << 'lib'
-require 'bundler'
-Bundler.require
 require 'memetalk'
 
 if ARGV.any? { |a| a == '--help' || a == '-h' }
