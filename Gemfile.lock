@@ -1,0 +1,41 @@
+GIT
+  remote: git://github.com/txus/meme
+  revision: 39d1931b6b210d96369efbfbc8bf3cc6d8d40f20
+  branch: develop
+  specs:
+    meme_generator (1.0)
+      nokogiri (~> 1.4)
+
+PATH
+  remote: .
+  specs:
+    memetalk (0.0.1)
+      talker
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    diff-lcs (1.1.2)
+    eventmachine (0.12.10)
+    nokogiri (1.4.4)
+    rspec (2.5.0)
+      rspec-core (~> 2.5.0)
+      rspec-expectations (~> 2.5.0)
+      rspec-mocks (~> 2.5.0)
+    rspec-core (2.5.1)
+    rspec-expectations (2.5.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.5.0)
+    talker (0.0.4)
+      eventmachine
+      yajl-ruby
+    yajl-ruby (0.8.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  meme_generator!
+  memetalk!
+  rspec
+  talker

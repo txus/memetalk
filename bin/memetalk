@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+$: << 'lib'
+require 'bundler'
+Bundler.require
+require 'memetalk'
+
+if ARGV.any? { |a| a == '--help' || a == '-h' }
+  puts 
+  puts 'Memetalk. Brought to you by Codegram'
+  puts '------------------------------------'
+  puts 'Generates and publishes memes to a Talkerapp room (see talkerapp.com).'
+  puts
+  puts 'You should have a ~/.memetalkrc with the following data:'
+  puts
+  puts "\ttalker:"
+  puts "\t  token: 'MY_API_TOKEN' (go to Settings in your Talker account to get yours)"
+  puts "\t  room: YOUR_ROOM_ID (the number id of your room, for example 3874)\n"
+  puts
+  puts 'USAGE:'
+  puts "\t\tmemetalk GENERATOR LINE1 [LINE2]\n"
+  puts "\tExample:"
+  puts "\t\tmemetalk Y_U_NO \"TEST\" \"WHY U NO GREEN\"\n"
+  puts
+  puts "...and your meme will be posted to your Talker room!\n"
+  puts
+  puts 'Available generators are:'
+  Memetalk.list.each do |m|
+    puts "\t#{m}"
+  end
+  puts
+  exit(0)
+end
+
+Memetalk.run ARGV
