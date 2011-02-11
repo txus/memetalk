@@ -1,6 +1,6 @@
 #Memetalk
 
-A simple gem that combines the power of [a fork](http://github.com/txus/memegenerator) of Dr Brain's [meme generator](http://github.com/drbrain/meme)
+A simple gem that combines the power of Eric Hodel's [meme generator](http://github.com/drbrain/meme)
 and the power of communication of [Talkerapp](http://talkerapp.com).
 
 ##Install

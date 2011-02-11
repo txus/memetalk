@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    memetalk (0.0.1)
-      memegenerator
+    memetalk (0.0.2)
+      meme_generator
       talker
 
 GEM
@@ -10,7 +10,7 @@ GEM
   specs:
     diff-lcs (1.1.2)
     eventmachine (0.12.10)
-    memegenerator (1.1.0)
+    meme_generator (1.1)
       nokogiri (~> 1.4)
     nokogiri (1.4.4)
     rspec (2.5.0)
@@ -30,7 +30,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  memegenerator
+  meme_generator
   memetalk!
   rspec
   talker
