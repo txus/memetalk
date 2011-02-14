@@ -30,7 +30,7 @@ describe Memetalk do
 
       Memetalk.stub(:token).and_return token
       Memetalk.stub(:room).and_return room
-      Talker::Client.should_receive(:connect).with(room: room, token: token).and_yield client
+      Talker::Client.should_receive(:connect).with(:room => room, :token => token).and_yield client
 
       # on connected callback
       client.should_receive(:on_connected).and_yield
