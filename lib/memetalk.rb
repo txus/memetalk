@@ -17,7 +17,7 @@ module Memetalk
 
     def publish link
       EM.run do
-        Talker::Client.connect(room: room, token: token) do |client|
+        Talker::Client.connect(:room => room, :token => token) do |client|
           client.on_connected do
             client.send_message link
             client.close
